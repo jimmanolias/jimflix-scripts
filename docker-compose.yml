@@ -1,0 +1,17 @@
+services:
+
+  jimflix-scripts:
+    build: .
+    container_name: jimflix-scripts
+    environment:
+      - TZ=Europe/Athens
+    volumes:
+      - /srv/jimflix:/srv/jimflix
+      - /mnt/zurg:/mnt/zurg
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: unless-stopped
+
+networks:
+  default:
+    external: true
+    name: jimflix_network

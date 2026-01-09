@@ -1,0 +1,32 @@
+# Folders to ignore
+logs/
+.startup_done
+
+# Ignore all environment files
+*.env
+
+# Ignore log files and temp folders
+*.log
+tmp/
+temp/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore editor backup and swap files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore node_modules (if applicable)
+node_modules/
+
+# Ignore Docker override files
+docker-compose.override.yml
